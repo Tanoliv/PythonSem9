@@ -31,7 +31,7 @@ def ssumma(message):
 @bot.message_handler(content_types= ['text'])
 def int_float_calc(message):
     if message.text== 'Вычисление int(float) чисел':
-        bot.send_message(message.chat.id, f'Введите числа  и оператор (+ или -, *, /, %, //, **) между числами  через пробел, для вычесления' ) 
+        bot.send_message(message.chat.id, f'Введите числа  и оператор (+ или -, *, /, %, //, **) между числами  через пробел, для вычисления' ) 
         bot.register_next_step_handler(message, summa)
         bot.register_next_step_handler(message, opr2)
 
